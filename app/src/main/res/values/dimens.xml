@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="logo_layout_width">100dp</dimen>
+    <dimen name="logo_layout_height">15.28dp</dimen>
+    <dimen name="logo_layout_margin">38.67dp</dimen>
+
+    <dimen name="search_layout_height">39dp</dimen>
+    <dimen name="search_margin_top">36dp</dimen>
+    <dimen name="search_margin_right">30dp</dimen>
+    <dimen name="search_margin_left">30dp</dimen>
+
+</resources>

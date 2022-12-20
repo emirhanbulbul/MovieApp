@@ -1,14 +1,132 @@
 <?xml version="1.0" encoding="utf-8"?>
-<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".HomeFragment">
+    tools:context=".ui.home.HomeFragment">
 
-    <!-- TODO: Update blank fragment layout -->
-    <TextView
+    <ImageView
+        android:id="@+id/logo"
+        android:layout_width="@dimen/logo_layout_width"
+        android:layout_height="@dimen/logo_layout_height"
+        android:layout_margin="@dimen/logo_layout_margin"
+        android:src="@drawable/logo"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <androidx.appcompat.widget.AppCompatEditText
+        android:id="@+id/search"
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:text="@string/hello_blank_fragment" />
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/search_margin_left"
+        android:layout_marginTop="24dp"
+        android:layout_marginEnd="@dimen/search_margin_right"
+        android:background="@drawable/searchview_background"
+        android:drawableStart="@drawable/ic_baseline_search_24"
+        android:inputType="text"
+        android:padding="10dp"
+        android:textColor="@color/white"
+        app:layout_constraintTop_toBottomOf="@id/logo" />
 
-</FrameLayout>
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/search">
+
+        <LinearLayout
+            android:id="@+id/homeFragmentGroup"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:scrollbars="vertical"
+            android:visibility="visible"
+            app:layout_constraintTop_toBottomOf="@id/search">
+
+
+            <TextView
+                android:id="@+id/title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="30dp"
+                android:layout_marginTop="24dp"
+                android:layout_marginBottom="14dp"
+                android:fontFamily="@font/satoshi"
+                android:text="@string/topRated"
+                android:textColor="@color/white"
+                android:textSize="20sp" />
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/topRatedRv"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:clipToPadding="false"
+                android:overScrollMode="never"
+                android:padding="0dp"
+                android:paddingStart="30dp"
+                android:paddingEnd="0dp" />
+
+            <TextView
+                android:id="@+id/popularTitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="30dp"
+                android:layout_marginTop="24dp"
+                android:fontFamily="@font/satoshi"
+                android:text="@string/popularTitle"
+                android:textColor="@color/white"
+                android:textSize="20sp" />
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/popularRv"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="14dp"
+                android:clipToPadding="false"
+                android:overScrollMode="never"
+                android:padding="0dp"
+                android:paddingStart="30dp"
+                android:paddingEnd="0dp" />
+
+            <TextView
+                android:id="@+id/upcoming"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="30dp"
+                android:layout_marginTop="24dp"
+                android:fontFamily="@font/satoshi"
+                android:text="@string/upcoming"
+                android:textColor="@color/white"
+                android:textSize="20sp" />
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/upcomingRv"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="14dp"
+                android:clipToPadding="false"
+                android:overScrollMode="never"
+                android:padding="0dp"
+                android:paddingStart="30dp"
+                android:paddingEnd="0dp" />
+
+        </LinearLayout>
+    </androidx.core.widget.NestedScrollView>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/searchListRv"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="24dp"
+        android:layout_marginEnd="30dp"
+        android:visibility="gone"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/search" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
