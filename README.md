@@ -11,6 +11,8 @@ Uygulama api.themoviedb.org üzerinden verileri çekmektedir. Ana sayfada buluna
 - View Binding
 
 #Ekran Görüntüleri 👽
-![photo_5922637499367275578_y](https://user-images.githubusercontent.com/14194362/212773835-545451e8-50e1-40d2-bebe-4a7f3975fe20.jpg)
-![photo_5922637499367275577_y](https://user-images.githubusercontent.com/14194362/212773838-b298df15-d1df-40c4-b2b7-40322dce1705.jpg)
-![photo_5922637499367275576_y](https://user-images.githubusercontent.com/14194362/212773842-b7a6430e-c159-41ce-9702-22d76f029f93.jpg)
+<p float="center">
+<img src="https://user-images.githubusercontent.com/14194362/212774121-6b04c605-422c-4456-9fad-fb10637105ba.jpg" width="410"/>
+<img src="https://user-images.githubusercontent.com/14194362/212774181-6f8b4ae5-b10b-43a6-bfec-fe863a4980ed.jpg" width="410"/>
+<img src="https://user-images.githubusercontent.com/14194362/212774193-0f6b9bbb-85aa-4e96-a97e-41c585193994.jpg" width="410"/>
+</p>
