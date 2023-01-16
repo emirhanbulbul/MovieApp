@@ -1,4 +1,4 @@
-package com.emirhanbb.helloandroid
+package com.emirhanbb.movieapp
 
 import org.junit.Test
 

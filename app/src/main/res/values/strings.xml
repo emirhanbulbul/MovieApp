@@ -1,9 +1,16 @@
 <resources>
-    <string name="app_name">HelloAndroid</string>
-    <!-- TODO: Remove or change this placeholder text -->
+    <string name="app_name">MovieApp</string>
     <string name="hello_blank_fragment">Hello blank fragment</string>
     <string name="topRated">Top Rated</string>
     <string name="homeTitleSearch">Search Results</string>
     <string name="popularTitle">Popular</string>
     <string name="upcoming">Upcoming</string>
+    <string name="release_date">Release Date</string>
+    <string name="information">Information</string>
+    <string name="average_vote">Average Vote</string>
+    <string name="spoken_languages">Spoken Languages</string>
+    <string name="popularity">Popularity</string>
+    <string name="_2h_56m">2h 56m</string>
+    <string name="detail_floor">%1$.1f/10</string>
+    <string name="popularity_value">%1$.0f</string>
 </resources>

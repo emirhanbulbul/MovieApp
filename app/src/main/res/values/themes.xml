@@ -5,6 +5,8 @@
         <item name="colorPrimary">@color/notification_bar_color</item>
         <item name="colorPrimaryVariant">@color/notification_bar_color</item>
         <item name="colorOnPrimary">@color/white</item>
+        <item name="android:windowTranslucentStatus">true</item>
+        <item name="android:windowTranslucentNavigation">true</item>
         <!-- Secondary brand color. -->
         <item name="colorSecondary">@color/white</item>
         <item name="colorSecondaryVariant">@color/white</item>
@@ -24,4 +26,5 @@
         <!-- Icon Color -->
         <item name="android:tint">@color/white</item>
     </style>
+
 </resources>
