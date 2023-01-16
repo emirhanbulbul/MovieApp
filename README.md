@@ -10,7 +10,7 @@ Uygulama api.themoviedb.org üzerinden verileri çekmektedir. Ana sayfada buluna
 - Navigation
 - View Binding
 
-#Ekran Görüntüleri 👽
+# Ekran Görüntüleri 👽
 <p float="center">
 <img src="https://user-images.githubusercontent.com/14194362/212774121-6b04c605-422c-4456-9fad-fb10637105ba.jpg" width="410"/>
 <img src="https://user-images.githubusercontent.com/14194362/212774181-6f8b4ae5-b10b-43a6-bfec-fe863a4980ed.jpg" width="410"/>
